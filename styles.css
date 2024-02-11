@@ -126,3 +126,144 @@ footer {
 .hotel.fade-in {
     opacity: 1;
 }
+
+
+@media only screen and (max-width: 767px) {
+    /* styles.css */
+
+    body {
+        background-color: #DDD0C8;
+        color: #fff;
+        /* font-family: Arial, sans-serif; */
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #323232;
+        padding: 35px 0;
+        margin-bottom: 3px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+        /* Black color */
+        padding: 10px 20px;
+        background-color: #00ff00;
+        /* Neon green */
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: border-color 0.3s;
+    }
+
+    nav ul li a:hover {
+        border-color: #00ff00;
+        /* neon green */
+        box-shadow: 0 0 10px #00ff00;
+        /* glow effect */
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    main {
+        background-color: #323232;
+        /* dark background */
+        padding: 20px;
+    }
+
+    footer {
+        background-color: #111;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #hotels {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hotel-image {
+        flex: 0 0 300px;
+        /* Set a fixed width for the image container */
+    }
+
+    .hotel {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hotel-info {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .hotel-image img {
+        max-width: 102%;
+        height: auto;
+    }
+
+    .hotel-info h2,
+    .hotel-info p {
+        font-family: 'Montserrat', sans-serif;
+        /* Times New Roman font for hotel names and descriptions */
+    }
+
+    .hotel-image img:hover {
+        border-color: #00ff00;
+        box-shadow: 0 0 10px #00ff00;
+        transition: border-color 0.3s, box-shadow 0.3s;
+
+    }
+
+    footer {
+        background-color: #111;
+        padding: 1px 0;
+        /* Decreased padding */
+        text-align: center;
+    }
+
+    .hotel {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .hotel.fade-in {
+        opacity: 1;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .hotel-info .btn {
+        width: 100%;
+        /* Ensuring buttons take full width */
+        margin-top: 10px;
+    }
+}
