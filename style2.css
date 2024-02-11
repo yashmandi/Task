@@ -157,6 +157,21 @@ footer {
     /* Add box-shadow on hover */
 }
 
+.founder-images img {
+    width: 250px;
+    height: 380px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Include transition for border color */
+}
+
+.founder-images img:hover {
+    border: 0px solid #00ff00;
+    /* Neon green border color */
+    box-shadow: 0 0 10px #00ff00;
+    /* Neon green glow effect */
+}
+
 .service h2 {
     margin-top: 0;
 }
